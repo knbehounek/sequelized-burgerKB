@@ -1,3 +1,43 @@
+body {
+    background: url(https://wallpapermemory.com/uploads/491/burger-wallpaper-hd-1366x768-149228.jpg);
+}
+
 .list-group-item{
     border: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+#fresh {
+    margin-left: 30%;
+}
+
+.burgerADD {
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: black;
+    border-color: gray;
+    margin-left: 10%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: gray;
+    margin-left: 3%;
+}
+
+.burger-label {
+    font-size: 30px;
+}
+
+.burger-div {
+    font-size: 30px;
 }

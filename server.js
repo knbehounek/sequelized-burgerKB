@@ -1,14 +1,14 @@
 // SERVER.JS FILE
 
-const express = require("express");
-const bodyParser = require("body-parser");
-const methodOverride = require("method-override");
+var express = require("express");
+var bodyParser = require("body-parser");
+var methodOverride = require("method-override");
 
-const db = require('./models');
+var db = require('./models');
 
 
-const app = express();
-const PORT = process.env.PORT || 8080;
+var app = express();
+var PORT = process.env.PORT || 8080;
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(__dirname + "/public"));

@@ -1,46 +1,46 @@
+<h1>
 
-
-<h1>Eat The Burger</h1>
+  Eat The Burger</h1>
 
 <div class="row align-center" id="burger-container">
   <div id="fresh" class="col-md-offset-1 col-md-4">
-    {{#each burger}}
-      {{#unless this.devoured}}
-          <div class="burger-div">
-  
-            <form class="inline-form" action="/?_method=PUT" method="POST">
-              <div class="form-group">
-                <label class="burger-label" for="burger-id">{{this.id}}. {{this.burger_name}}</label>
-                <input type="hidden" id="burger-id" name="id" value="{{this.id}}"/>
-                <button class="btn btn-success" type="submit">Devour it!</button>
-              </div>
-            </form>
-          </div>
+    {{#each burger}} {{#unless this.devoured}}
+    <div class="burger-div">
 
-      {{/unless}}
-    {{/each}}
-  </div>
-
-  <div id="devoured"  class="col-md-offset-1 col-md-4">
-    {{#each burger}}
-      {{#if this.devoured}}
-  
-          <div  class="burger-div">
-            {{this.id}}. {{this.burger_name}}
-          </div>
-
-      {{/if}}
-    {{/each}}
-  </div>
-</div>
-
-<div class="row">
-  <h2>Add a Burger</h2>
-  <form class="form" method="POST" action="/">
-    <div class="form group">
-      <textarea type="text" name="burger_name" ></textarea>
+      <form class="inline-form" action="/?_method=PUT" method="POST">
+        <div class="form-group">
+          <label class="burger-label" for="burger-id">{{this.id}}. {{this.burger_name}}</label>
+          <input type="hidden" id="burger-id" name="id" value="{{this.id}}" />
+          <button class="btn btn-success" type="submit">Devour it!</button>
+        </div>
+      </form>
     </div>
-      <button class="btn btn-primary" type="submit">Add A Burger!</button>
-  </form>
+
+    {{/unless}} {{/each}}
+  </div>
+
+  <div id="devoured" class="col-md-offset-1 col-md-4">
+    {{#each burger}} {{#if this.devoured}}
+
+    <div class="burger-div">
+      {{this.id}}. {{this.burger_name}}
+    </div>
+
+    {{/if}} {{/each}}
+  </div>
 </div>
 
+
+  <div class="row burgerADD">
+    <h2>Add a Burger</h2>
+  </div>
+  <form class="form" method="POST" action="/">
+    <div class="row burgerADD">
+      <div class="form group">
+        <textarea type="text" name="burger_name"></textarea>
+      </div>
+    </div>
+    <div class="row burgerADD">
+      <button class="btn btn-primary" type="submit">Add A Burger!</button>
+    </div>
+  </form>
